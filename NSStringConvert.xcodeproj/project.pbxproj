@@ -15,6 +15,8 @@
 		7F4506EC1767720B00794621 /* NSStringConvertPredicateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4506EB1767720B00794621 /* NSStringConvertPredicateTest.m */; };
 		7F4506EF1767722300794621 /* NSString+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4506EE1767722300794621 /* NSString+Convert.m */; };
 		7F4506F21767758700794621 /* NSStringConvertRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4506F11767758700794621 /* NSStringConvertRegularExpression.m */; };
+		7F872DBF176A4E7400F39678 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F872DBE176A4E7400F39678 /* CoreGraphics.framework */; };
+		7F872DC1176A4F3100F39678 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F872DC0176A4F3000F39678 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		7F4506EE1767722300794621 /* NSString+Convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Convert.m"; sourceTree = "<group>"; };
 		7F4506F01767758700794621 /* NSStringConvertRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringConvertRegularExpression.h; sourceTree = "<group>"; };
 		7F4506F11767758700794621 /* NSStringConvertRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertRegularExpression.m; sourceTree = "<group>"; };
+		7F872DBE176A4E7400F39678 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		7F872DC0176A4F3000F39678 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F872DC1176A4F3100F39678 /* UIKit.framework in Frameworks */,
+				7F872DBF176A4E7400F39678 /* CoreGraphics.framework in Frameworks */,
 				7F1FD4281769F49E0095DFA8 /* Foundation.framework in Frameworks */,
 				7F4506D8176771E300794621 /* SenTestingKit.framework in Frameworks */,
 			);
@@ -79,6 +85,8 @@
 		7F4506D6176771E300794621 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F872DC0176A4F3000F39678 /* UIKit.framework */,
+				7F872DBE176A4E7400F39678 /* CoreGraphics.framework */,
 				7F1FD4271769F49E0095DFA8 /* Foundation.framework */,
 				7F4506D7176771E300794621 /* SenTestingKit.framework */,
 			);

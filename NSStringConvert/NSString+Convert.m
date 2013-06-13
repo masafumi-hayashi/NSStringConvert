@@ -32,4 +32,9 @@
 {
     return [NSURL URLWithString:self];
 }
+
+- (CGRect)CGRect
+{
+    return CGRectFromString(self);
+}
 @end
