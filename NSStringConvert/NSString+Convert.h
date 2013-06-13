@@ -13,4 +13,7 @@
 - (NSRegularExpression *)regexp;
 - (NSURL *)url;
 - (CGRect)CGRect;
+- (CGSize)CGSize;
+- (CGPoint)CGPoint;
+- (CGAffineTransform)CGAffineTransform;
 @end

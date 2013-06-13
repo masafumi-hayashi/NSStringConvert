@@ -17,6 +17,9 @@
 		7F4506F21767758700794621 /* NSStringConvertRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4506F11767758700794621 /* NSStringConvertRegularExpression.m */; };
 		7F872DBF176A4E7400F39678 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F872DBE176A4E7400F39678 /* CoreGraphics.framework */; };
 		7F872DC1176A4F3100F39678 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F872DC0176A4F3000F39678 /* UIKit.framework */; };
+		7F872DC4176A510200F39678 /* NSStringConvertCGSizeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F872DC3176A510100F39678 /* NSStringConvertCGSizeTest.m */; };
+		7F872DC7176A510C00F39678 /* NSStringConvertCGPointTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F872DC6176A510C00F39678 /* NSStringConvertCGPointTest.m */; };
+		7F872DCA176A511D00F39678 /* NSStringConvertCGAffineTransformTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F872DC9176A511D00F39678 /* NSStringConvertCGAffineTransformTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,12 @@
 		7F4506F11767758700794621 /* NSStringConvertRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertRegularExpression.m; sourceTree = "<group>"; };
 		7F872DBE176A4E7400F39678 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		7F872DC0176A4F3000F39678 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7F872DC2176A510100F39678 /* NSStringConvertCGSizeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringConvertCGSizeTest.h; sourceTree = "<group>"; };
+		7F872DC3176A510100F39678 /* NSStringConvertCGSizeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertCGSizeTest.m; sourceTree = "<group>"; };
+		7F872DC5176A510C00F39678 /* NSStringConvertCGPointTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringConvertCGPointTest.h; sourceTree = "<group>"; };
+		7F872DC6176A510C00F39678 /* NSStringConvertCGPointTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertCGPointTest.m; sourceTree = "<group>"; };
+		7F872DC8176A511D00F39678 /* NSStringConvertCGAffineTransformTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringConvertCGAffineTransformTest.h; sourceTree = "<group>"; };
+		7F872DC9176A511D00F39678 /* NSStringConvertCGAffineTransformTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertCGAffineTransformTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				7F1FD42A1769F89E0095DFA8 /* NSStringConvertURLTest.m */,
 				7F1FD460176A3FEA0095DFA8 /* NSStringConvertCGRectTest.h */,
 				7F1FD461176A3FEA0095DFA8 /* NSStringConvertCGRectTest.m */,
+				7F872DC2176A510100F39678 /* NSStringConvertCGSizeTest.h */,
+				7F872DC3176A510100F39678 /* NSStringConvertCGSizeTest.m */,
+				7F872DC5176A510C00F39678 /* NSStringConvertCGPointTest.h */,
+				7F872DC6176A510C00F39678 /* NSStringConvertCGPointTest.m */,
+				7F872DC8176A511D00F39678 /* NSStringConvertCGAffineTransformTest.h */,
+				7F872DC9176A511D00F39678 /* NSStringConvertCGAffineTransformTest.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -202,6 +217,9 @@
 				7F4506F21767758700794621 /* NSStringConvertRegularExpression.m in Sources */,
 				7F1FD42B1769F89E0095DFA8 /* NSStringConvertURLTest.m in Sources */,
 				7F1FD462176A3FEA0095DFA8 /* NSStringConvertCGRectTest.m in Sources */,
+				7F872DC4176A510200F39678 /* NSStringConvertCGSizeTest.m in Sources */,
+				7F872DC7176A510C00F39678 /* NSStringConvertCGPointTest.m in Sources */,
+				7F872DCA176A511D00F39678 /* NSStringConvertCGAffineTransformTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

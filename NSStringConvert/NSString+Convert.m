@@ -37,4 +37,19 @@
 {
     return CGRectFromString(self);
 }
+
+- (CGSize)CGSize
+{
+    return CGSizeFromString(self);
+}
+
+- (CGPoint)CGPoint
+{
+    return CGPointFromString(self);
+}
+
+- (CGAffineTransform)CGAffineTransform
+{
+    return CGAffineTransformFromString(self);
+}
 @end
