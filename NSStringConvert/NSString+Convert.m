@@ -26,6 +26,11 @@
     return [NSURL URLWithString:self];
 }
 
+- (NSRange)range
+{
+    return NSRangeFromString(self);
+}
+
 - (CGRect)CGRect
 {
     return CGRectFromString(self);

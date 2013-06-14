@@ -12,6 +12,7 @@
 - (NSPredicate *)pred;
 - (NSRegularExpression *)regexp;
 - (NSURL *)url;
+- (NSRange)range;
 - (CGRect)CGRect;
 - (CGSize)CGSize;
 - (CGPoint)CGPoint;
