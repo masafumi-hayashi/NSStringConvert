@@ -31,6 +31,12 @@
     STAssertTrue([self numberOfMatches:@"1a"] == 0, nil);
 }
 
+- (void)testNotWellFormed
+{
+    NSRegularExpression * regexp = @"test\\".regexp;
+    STAssertNil(regexp, nil);
+}
+
 - (NSUInteger)numberOfMatches:(NSString *)text
 {
     return [[self.regexp matchesInString:text

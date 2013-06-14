@@ -16,16 +16,9 @@
 
 - (NSRegularExpression *)regexp
 {
-    NSError * error;
-    NSRegularExpression * regexp = [NSRegularExpression regularExpressionWithPattern:self
-                                                                             options:0
-                                                                               error:&error];
-    if (error) {
-        [NSException exceptionWithName:NSInvalidArgumentException
-                                reason:[error localizedFailureReason]
-                              userInfo:@{@"error": error}];
-    }
-    return regexp;
+    return [NSRegularExpression regularExpressionWithPattern:self
+                                                     options:0
+                                                       error:nil];
 }
 
 - (NSURL *)url
