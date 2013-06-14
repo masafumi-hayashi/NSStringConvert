@@ -6,13 +6,13 @@
 //
 //
 
-#import "NSStringConvertRegularExpression.h"
+#import "NSStringConvertRegularExpressionTest.h"
 #import "NSString+Convert.h"
-@interface NSStringConvertRegularExpression ()
+@interface NSStringConvertRegularExpressionTest ()
 @property (nonatomic) NSRegularExpression * regexp;
 @end
 
-@implementation NSStringConvertRegularExpression
+@implementation NSStringConvertRegularExpressionTest
 - (void)setUp
 {
     self.regexp = @"^[0-9]+$".regexp;

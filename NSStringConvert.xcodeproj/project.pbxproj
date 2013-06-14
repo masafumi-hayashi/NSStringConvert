@@ -14,7 +14,7 @@
 		7F4506E2176771E300794621 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4506E0176771E300794621 /* InfoPlist.strings */; };
 		7F4506EC1767720B00794621 /* NSStringConvertPredicateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4506EB1767720B00794621 /* NSStringConvertPredicateTest.m */; };
 		7F4506EF1767722300794621 /* NSString+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4506EE1767722300794621 /* NSString+Convert.m */; };
-		7F4506F21767758700794621 /* NSStringConvertRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4506F11767758700794621 /* NSStringConvertRegularExpression.m */; };
+		7F4506F21767758700794621 /* NSStringConvertRegularExpressionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4506F11767758700794621 /* NSStringConvertRegularExpressionTest.m */; };
 		7F872DBF176A4E7400F39678 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F872DBE176A4E7400F39678 /* CoreGraphics.framework */; };
 		7F872DC1176A4F3100F39678 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F872DC0176A4F3000F39678 /* UIKit.framework */; };
 		7F872DC4176A510200F39678 /* NSStringConvertCGSizeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F872DC3176A510100F39678 /* NSStringConvertCGSizeTest.m */; };
@@ -37,8 +37,8 @@
 		7F4506EB1767720B00794621 /* NSStringConvertPredicateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertPredicateTest.m; sourceTree = "<group>"; };
 		7F4506ED1767722300794621 /* NSString+Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Convert.h"; sourceTree = "<group>"; };
 		7F4506EE1767722300794621 /* NSString+Convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Convert.m"; sourceTree = "<group>"; };
-		7F4506F01767758700794621 /* NSStringConvertRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringConvertRegularExpression.h; sourceTree = "<group>"; };
-		7F4506F11767758700794621 /* NSStringConvertRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertRegularExpression.m; sourceTree = "<group>"; };
+		7F4506F01767758700794621 /* NSStringConvertRegularExpressionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringConvertRegularExpressionTest.h; sourceTree = "<group>"; };
+		7F4506F11767758700794621 /* NSStringConvertRegularExpressionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertRegularExpressionTest.m; sourceTree = "<group>"; };
 		7F872DBE176A4E7400F39678 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		7F872DC0176A4F3000F39678 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7F872DC2176A510100F39678 /* NSStringConvertCGSizeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringConvertCGSizeTest.h; sourceTree = "<group>"; };
@@ -108,8 +108,8 @@
 				7F4506DE176771E300794621 /* Supporting Files */,
 				7F4506EA1767720B00794621 /* NSStringConvertPredicateTest.h */,
 				7F4506EB1767720B00794621 /* NSStringConvertPredicateTest.m */,
-				7F4506F01767758700794621 /* NSStringConvertRegularExpression.h */,
-				7F4506F11767758700794621 /* NSStringConvertRegularExpression.m */,
+				7F4506F01767758700794621 /* NSStringConvertRegularExpressionTest.h */,
+				7F4506F11767758700794621 /* NSStringConvertRegularExpressionTest.m */,
 				7F1FD4291769F89E0095DFA8 /* NSStringConvertURLTest.h */,
 				7F1FD42A1769F89E0095DFA8 /* NSStringConvertURLTest.m */,
 				7F1FD460176A3FEA0095DFA8 /* NSStringConvertCGRectTest.h */,
@@ -214,7 +214,7 @@
 			files = (
 				7F4506EC1767720B00794621 /* NSStringConvertPredicateTest.m in Sources */,
 				7F4506EF1767722300794621 /* NSString+Convert.m in Sources */,
-				7F4506F21767758700794621 /* NSStringConvertRegularExpression.m in Sources */,
+				7F4506F21767758700794621 /* NSStringConvertRegularExpressionTest.m in Sources */,
 				7F1FD42B1769F89E0095DFA8 /* NSStringConvertURLTest.m in Sources */,
 				7F1FD462176A3FEA0095DFA8 /* NSStringConvertCGRectTest.m in Sources */,
 				7F872DC4176A510200F39678 /* NSStringConvertCGSizeTest.m in Sources */,
