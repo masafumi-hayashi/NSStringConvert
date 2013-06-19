@@ -4,8 +4,8 @@ NSStringConvert
 
 NSStringから様々な型に変換する拡張
 
-[TOP]: #top
 [NSArray]: #nsarray
+[NSPredicate]: #nspredicate
 [NSRegularExpression]: #nsregularexpression
 [NSRange]: #nsrange
 [NSURL]: #nsurl
@@ -15,6 +15,7 @@ NSStringから様々な型に変換する拡張
 [CGSize]: #cgsize
 
 * [NSArray]
+* [NSPredicate]
 * [NSRegularExpression]
 * [NSRange]
 * [NSURL]
