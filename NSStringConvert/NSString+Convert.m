@@ -31,6 +31,16 @@
     return NSRangeFromString(self);
 }
 
+- (NSArray *)array
+{
+    NSMutableArray * result = @[].mutableCopy;
+    const NSUInteger length = self.length;
+    for (NSUInteger i = 0; i < length; i++) {
+        [result addObject:[self substringWithRange:NSMakeRange(i, 1)]];
+    }
+    return result;
+}
+
 - (CGRect)CGRect
 {
     return CGRectFromString(self);
