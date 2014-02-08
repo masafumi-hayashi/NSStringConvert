@@ -16,14 +16,14 @@
 @implementation NSStringConvertPredicateTest
 - (void)setUp
 {
-    self.pred = @"SELF=='a'".pred;
+    _pred = [NSPredicate predicateWithFormat:@"SELF=='a'"];
 }
 
 - (void)testConvertPredicate
 {
-    STAssertEqualObjects(self.pred, [NSPredicate predicateWithFormat:@"SELF=='a'"], nil);
+    STAssertEqualObjects(@"SELF=='a'".pred, _pred, nil);
     
     NSArray * sample = @[@"a", @"b", @"a", @"bc"];
-    STAssertTrue([[sample filteredArrayUsingPredicate:self.pred] count]==2, nil);
+    STAssertTrue([[sample filteredArrayUsingPredicate:_pred] count]==2, nil);
 }
 @end

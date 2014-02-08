@@ -17,11 +17,11 @@
 
 - (void)setUp
 {
-    self.url = [NSURL URLWithString:@"http://localhost"];
+    _url = [NSURL URLWithString:@"http://localhost"];
 }
 
 - (void)testConvertURL
 {
-    STAssertEqualObjects(@"http://localhost".url, self.url, nil);
+    STAssertEqualObjects(@"http://localhost".url, _url, nil);
 }
 @end

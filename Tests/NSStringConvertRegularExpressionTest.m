@@ -15,15 +15,14 @@
 @implementation NSStringConvertRegularExpressionTest
 - (void)setUp
 {
-    self.regexp = @"^[0-9]+$".regexp;
+    _regexp = [NSRegularExpression regularExpressionWithPattern:@"^[0-9]+$"
+                                                        options:0
+                                                          error:nil];
 }
 
 - (void)testConvertRegularExpression
 {
-    NSRegularExpression * regexp = [NSRegularExpression regularExpressionWithPattern:@"^[0-9]+$"
-                                                                             options:0
-                                                                               error:nil];
-    STAssertEqualObjects(self.regexp, regexp, nil);
+    STAssertEqualObjects(@"^[0-9]+$".regexp, _regexp, nil);
     
     STAssertTrue([self numberOfMatches:@"1"] == 1, nil);
     STAssertTrue([self numberOfMatches:@"a"] == 0, nil);
@@ -39,8 +38,8 @@
 
 - (NSUInteger)numberOfMatches:(NSString *)text
 {
-    return [[self.regexp matchesInString:text
-                                options:0
-                                  range:NSMakeRange(0, [text length])] count];
+    return [[_regexp matchesInString:text
+                             options:0
+                               range:NSMakeRange(0, [text length])] count];
 }
 @end
