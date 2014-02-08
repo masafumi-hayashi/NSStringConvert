@@ -48,12 +48,8 @@
     if (len > 4 && utf[0] == '{' && utf[1] == '{' && utf[len-2] == '}' && utf[len-1] == '}') {
         return CGRectFromString(self);
     }
-    NSString * tmp = self;
-    if (len > 2 && utf[0]=='{' && utf[len-1] == '}') {
-        tmp = [self _replacedString];
-    }
     
-    NSArray* n = [tmp componentsSeparatedByString:@","];
+    NSArray* n = [self _components:[self _replacedString]];
     if ([n count] == 4) {
         return CGRectMake([n[0] doubleValue],
                           [n[1] doubleValue],
@@ -75,6 +71,23 @@
     return CGRectZero;
 }
 
+- (NSArray *)_components:(NSString *)str
+{
+    return [str componentsSeparatedByString:[self _maybeCommaSepareted]? @",":@" "];
+}
+
+- (BOOL)_maybeCommaSepareted
+{
+    const char* utf = [self UTF8String];
+    const NSUInteger len = [self length];
+    for (int i = 0; i< len; i++) {
+        if (utf[i]==',') {
+            return YES;
+        }
+    }
+    return NO;
+}
+
 - (NSString *)_replacedString
 {
     NSMutableString * tmp = self.mutableCopy;
@@ -85,7 +98,7 @@
     [regexp replaceMatchesInString:tmp
                            options:0
                              range:NSMakeRange(0, len)
-                      withTemplate:@" "];
+                      withTemplate:@""];
     return tmp;
 }
 
@@ -97,8 +110,7 @@
        return CGSizeFromString(self);
     }
     
-    NSString * tmp = [self _replacedString];
-    NSArray * n = [tmp componentsSeparatedByString:@","];
+    NSArray * n = [self _components:[self _replacedString]];
     if ([n count] == 2) {
         return CGSizeMake([n[0] doubleValue], [n[1] doubleValue]);
     }
@@ -111,7 +123,17 @@
 
 - (CGPoint)CGPoint
 {
-    return CGPointFromString(self);
+    const char * utf = [self UTF8String];
+    const NSUInteger len = [self length];
+    if (len > 2 && utf[0]=='{' && utf[len-1] == '}') {
+        return CGPointFromString(self);
+    }
+    
+    NSArray * n = [self _components:[self _replacedString]];
+    if ([n count] == 2) {
+        return CGPointMake([n[0] doubleValue], [n[1] doubleValue]);
+    }
+    return CGPointZero;
 }
 
 - (CGAffineTransform)CGAffineTransform

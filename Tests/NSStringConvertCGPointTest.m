@@ -8,14 +8,17 @@
 
 #import "NSStringConvertCGPointTest.h"
 #import "NSString+Convert.h"
+static BOOL test10x10(NSString* a)
+{
+    return CGPointEqualToPoint(a.CGPoint, CGPointMake(10, 10));
+}
 @implementation NSStringConvertCGPointTest
 - (void)testConvertCGPoint
 {
-    STAssertTrue(CGPointEqualToPoint(@"{10,10}".CGPoint, CGPointMake(10, 10)), nil);
+    STAssertTrue(test10x10(@"{10,10}"), nil);
+    STAssertTrue(test10x10(@"10,10"), nil);
+    STAssertTrue(test10x10(@"10 10"), nil);
+    STAssertTrue(test10x10(@"{10,10"), nil);
 }
 
-- (void)testNotWellFormed
-{
-    STAssertFalse(CGPointEqualToPoint(@"{10,10".CGPoint, CGPointMake(10, 10)), nil);
-}
 @end
