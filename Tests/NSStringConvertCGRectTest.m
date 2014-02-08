@@ -9,14 +9,22 @@
 #import "NSStringConvertCGRectTest.h"
 #import "NSString+Convert.h"
 
-@implementation NSStringConvertCGRectTest
-- (void)testConvertCGRect
+static BOOL test10x10(NSString * a)
 {
-    STAssertTrue(CGRectEqualToRect(@"{{0,0},{10,10}}".CGRect, CGRectMake(0, 0, 10, 10)), nil);
+    return CGRectEqualToRect(a.CGRect, CGRectMake(0, 0, 10, 10));
 }
 
-- (void)testNotWellFormed
+@implementation NSStringConvertCGRectTest
+- (void)testConvert
 {
-    STAssertTrue(CGRectEqualToRect(@"{1,1},{1,1}".CGRect, CGRectZero), nil);
+    STAssertTrue(test10x10(@"{{0,0},{10,10}}"), nil);
+    STAssertTrue(test10x10(@"{0,0,10,10}"), nil);
+    STAssertTrue(test10x10(@"{0,0},{10,10}"), nil);
+    STAssertTrue(test10x10(@"0,0,10,10"), nil);
+    STAssertTrue(test10x10(@"0,0,10"), nil);
+    STAssertTrue(test10x10(@"10,10"), nil);
+    STAssertTrue(test10x10(@"10"), nil);
+    
+    STAssertTrue(CGRectEqualToRect(@"".CGRect, CGRectZero), nil);
 }
 @end
