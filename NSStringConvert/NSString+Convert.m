@@ -138,6 +138,20 @@
 
 - (CGAffineTransform)CGAffineTransform
 {
-    return CGAffineTransformFromString(self);
+    const char * utf = [self UTF8String];
+    const NSUInteger len = [self length];
+    if (len > 2 && utf[0]=='{' && utf[len-1]=='}') {
+        return CGAffineTransformFromString(self);
+    }
+    NSArray * n = [self _components:[self _replacedString]];
+    if ([n count] == 6) {
+        return CGAffineTransformMake([n[0] doubleValue],
+                                     [n[1] doubleValue],
+                                     [n[2] doubleValue],
+                                     [n[3] doubleValue],
+                                     [n[4] doubleValue],
+                                     [n[5] doubleValue]);
+    }
+    return CGAffineTransformIdentity;
 }
 @end

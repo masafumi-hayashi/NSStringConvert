@@ -8,18 +8,26 @@
 
 #import "NSStringConvertCGAffineTransformTest.h"
 #import "NSString+Convert.h"
+
+static BOOL test(CGAffineTransform a, CGAffineTransform b)
+{
+    return CGAffineTransformEqualToTransform(a, b);
+}
+
+static BOOL testScale2x2(NSString * a)
+{
+    return test(a.CGAffineTransform, CGAffineTransformMakeScale(2, 2));
+}
+
 @implementation NSStringConvertCGAffineTransformTest
 - (void)testConvertCGAffineTransform
 {
-    CGAffineTransform a = @"{2,0,0,2,0,0}".CGAffineTransform;
-    CGAffineTransform b = CGAffineTransformMakeScale(2, 2);
-    STAssertTrue(CGAffineTransformEqualToTransform(a, b), nil);
+    STAssertTrue(testScale2x2(@"{2,0,0,2,0,0}"), nil);
+    STAssertTrue(testScale2x2(@"2,0,0,2,0,0"), nil);
 }
 
 - (void)testNotWellFormed
 {
-    CGAffineTransform a = @"2,0,0.2,0,0".CGAffineTransform;
-    CGAffineTransform b = CGAffineTransformMakeScale(2, 2);
-    STAssertFalse(CGAffineTransformEqualToTransform(a, b), nil);
+    STAssertFalse(testScale2x2(@"{2,0,0/2,0,0}"), nil);
 }
 @end
