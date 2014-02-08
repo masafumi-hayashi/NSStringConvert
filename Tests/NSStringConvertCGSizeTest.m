@@ -8,14 +8,20 @@
 
 #import "NSStringConvertCGSizeTest.h"
 #import "NSString+Convert.h"
+
+static BOOL test10x10(NSString* a)
+{
+    return CGSizeEqualToSize(a.CGSize, CGSizeMake(10, 10));
+}
+
 @implementation NSStringConvertCGSizeTest
 - (void)testConvertCGSize
 {
-    STAssertTrue(CGSizeEqualToSize(@"{10,10}".CGSize, CGSizeMake(10, 10)), nil);
+    STAssertTrue(test10x10(@"{10,10}"), nil);
+    STAssertTrue(test10x10(@"10,10"), nil);
+    STAssertTrue(test10x10(@"10 10"), nil);
+    STAssertTrue(test10x10(@"10"), nil);
+    STAssertTrue(test10x10(@"{10,10"), nil);
 }
 
-- (void)testNotWellFormed
-{
-    STAssertFalse(CGSizeEqualToSize(@"{10,10".CGSize, CGSizeMake(10, 10)), nil);
-}
 @end
