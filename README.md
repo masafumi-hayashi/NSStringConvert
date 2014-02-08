@@ -73,8 +73,14 @@ NSStringから様々な型に変換する拡張
 ### CGAffineTransform
 #### Before
     NSStringFromCGAffineTransform(@"{1,0,0,1,0,0}")
+    CGAffineTransformMakeTranslation(2,2)
+    CGAffineTransformMakeScale(2,2)
+    CGAffineTransformMakeRotation(2)
 #### After
     @"{1,0,0,1,0,0}".CGAffineTransform
+    @"2,2".Translation
+    @"2,2".Scale
+    @"2".Rotation
 
 ### CGPoint
 #### Before

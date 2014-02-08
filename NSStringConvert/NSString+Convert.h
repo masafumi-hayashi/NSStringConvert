@@ -19,4 +19,7 @@
 - (CGSize)CGSize;
 - (CGPoint)CGPoint;
 - (CGAffineTransform)CGAffineTransform;
+- (CGAffineTransform)Scale;
+- (CGAffineTransform)Translation;
+- (CGAffineTransform)Rotation;
 @end

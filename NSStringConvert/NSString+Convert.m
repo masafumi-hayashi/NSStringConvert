@@ -159,4 +159,21 @@
     }
     return CGAffineTransformIdentity;
 }
+
+- (CGAffineTransform)Translation
+{
+    CGPoint p = [self CGPoint];
+    return CGAffineTransformMakeTranslation(p.x, p.y);
+}
+
+- (CGAffineTransform)Scale
+{
+    CGPoint p = [self CGPoint];
+    return CGAffineTransformMakeScale(p.x, p.y);
+}
+
+- (CGAffineTransform)Rotation
+{
+    return CGAffineTransformMakeRotation([self doubleValue]);
+}
 @end
