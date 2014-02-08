@@ -91,11 +91,23 @@ NSStringから様々な型に変換する拡張
 ### CGRect
 #### Before
     NSStringFromCGRect(@"{{0,0},{10,10}}")
+    CGRectMake(0,0,10,10)
+    CGRectMake(0,0,20,20)
+    CGRectMake(0,0,50,50)
+    CGRectMake(0,0,300,300)
 #### After
     @"{{0,0},{10,10}}".CGRect
+    @"0,0,10,10".CGRect
+    @"0,0,20".CGRect
+    @"50,50".CGRect
+    @"300".CGRect
 
 ### CGSize
 #### Before
     NSStringFromCGSize(@"{10,10}")
+    CGSizeMake(5,5)
+    CGSizeMake(10,10)
 #### After
     @"{10,10}".CGSize
+    @"5,5".CGSize
+    @"10".CGSize
