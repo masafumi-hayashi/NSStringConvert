@@ -14,6 +14,7 @@
 - (NSURL *)url;
 - (NSRange)range;
 - (NSArray *)array;
+- (NSExpression *)exp;
 - (CGRect)CGRect;
 - (CGSize)CGSize;
 - (CGPoint)CGPoint;

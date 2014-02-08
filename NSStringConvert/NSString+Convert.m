@@ -41,6 +41,11 @@
     return result;
 }
 
+- (NSExpression *)exp
+{
+    return [NSExpression expressionWithFormat:self];
+}
+
 - (CGRect)CGRect
 {
     const char* utf =  [self UTF8String];

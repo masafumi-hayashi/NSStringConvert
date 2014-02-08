@@ -22,6 +22,7 @@
 		7F872DC7176A510C00F39678 /* NSStringConvertCGPointTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F872DC6176A510C00F39678 /* NSStringConvertCGPointTest.m */; };
 		7F872DCA176A511D00F39678 /* NSStringConvertCGAffineTransformTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F872DC9176A511D00F39678 /* NSStringConvertCGAffineTransformTest.m */; };
 		7FD2B81E177201CC00DD2A99 /* NSStringConvertArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2B81D177201CC00DD2A99 /* NSStringConvertArrayTest.m */; };
+		7FFA2B7B18A68379000B8955 /* NSStringConvertExpressionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA2B7A18A68379000B8955 /* NSStringConvertExpressionTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		7F872DC9176A511D00F39678 /* NSStringConvertCGAffineTransformTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertCGAffineTransformTest.m; sourceTree = "<group>"; };
 		7FD2B81C177201CC00DD2A99 /* NSStringConvertArrayTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringConvertArrayTest.h; sourceTree = "<group>"; };
 		7FD2B81D177201CC00DD2A99 /* NSStringConvertArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertArrayTest.m; sourceTree = "<group>"; };
+		7FFA2B7A18A68379000B8955 /* NSStringConvertExpressionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertExpressionTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				7F4B9F51176B6D170045D218 /* NSStringConvertRangeTest.m */,
 				7FD2B81C177201CC00DD2A99 /* NSStringConvertArrayTest.h */,
 				7FD2B81D177201CC00DD2A99 /* NSStringConvertArrayTest.m */,
+				7FFA2B7A18A68379000B8955 /* NSStringConvertExpressionTest.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				7F1FD42B1769F89E0095DFA8 /* NSStringConvertURLTest.m in Sources */,
 				7F1FD462176A3FEA0095DFA8 /* NSStringConvertCGRectTest.m in Sources */,
 				7F872DC4176A510200F39678 /* NSStringConvertCGSizeTest.m in Sources */,
+				7FFA2B7B18A68379000B8955 /* NSStringConvertExpressionTest.m in Sources */,
 				7F872DC7176A510C00F39678 /* NSStringConvertCGPointTest.m in Sources */,
 				7F872DCA176A511D00F39678 /* NSStringConvertCGAffineTransformTest.m in Sources */,
 				7F4B9F52176B6D170045D218 /* NSStringConvertRangeTest.m in Sources */,

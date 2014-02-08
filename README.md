@@ -5,6 +5,7 @@ NSStringConvert
 NSStringから様々な型に変換する拡張
 
 [NSArray]: #nsarray
+[NSExpression]: #nsexpression
 [NSPredicate]: #nspredicate
 [NSRegularExpression]: #nsregularexpression
 [NSRange]: #nsrange
@@ -15,6 +16,7 @@ NSStringから様々な型に変換する拡張
 [CGSize]: #cgsize
 
 * [NSArray]
+* [NSExpression]
 * [NSPredicate]
 * [NSRegularExpression]
 * [NSRange]
@@ -36,6 +38,11 @@ NSStringから様々な型に変換する拡張
 #### After
     @"text".array
 
+### NSExpression
+#### Before
+	[NSExpression expressionWithFormat:@"a+b"]
+#### After
+	@"a+b".exp
 
 ### NSRegularExpression
 #### Before
